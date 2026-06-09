@@ -4,8 +4,8 @@
 //! Open source for independent security audit.
 //! Part of the KeyLocker project.
 
-mod encryptor;
-mod key_derivation;
+pub mod encryptor;
+pub mod key_derivation;
 
 pub use encryptor::{encrypt, decrypt, EncryptionError};
 pub use key_derivation::{derive_master_key, verify_master_password, generate_recovery_key, KeyDerivationError};
