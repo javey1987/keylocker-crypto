@@ -1,0 +1,21 @@
+[package]
+name = "keylocker-crypto"
+version = "0.1.0"
+edition = "2024"
+description = "KeyLocker encryption library - AES-256-GCM with Argon2id key derivation"
+repository = "https://github.com/javey1987/keylocker-crypto"
+license = "MIT"
+
+[dependencies]
+aes-gcm = "0.10"
+argon2 = "0.5"
+rand = "0.8"
+base64 = "0.22"
+hex = "0.4"
+thiserror = "2"
+zeroize = { version = "1", features = ["derive"] }
+serde = { version = "1", features = ["derive"] }
+
+[lib]
+name = "keylocker_crypto"
+path = "src/lib.rs"
